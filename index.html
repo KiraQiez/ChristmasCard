@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Christmas Card</title>
 </head>
 <body>
-    <h1>Merry Christmas</h1>
+    <div class="background"></div>
+    <img src="snowman.png" alt="Snowman" class="snowman">
+    <div class="card">
+        <img src="santa.png" alt="Santa Claus" class="santa" onclick="toggleSanta()">
+        <h1>Merry Christmas!</h1>
+        <div class="content">
+            <p>Wishing you joy, peace, and happiness this holiday season. May your days be merry and bright!</p>
+            <p>From: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Santa Claus</a></p>
+            <input type="text" placeholder="Your Wish" id="name" class="wish">
+            <button onclick="toggleSnow()">Make A Wish</button>
+        </div>
+        
+        <div id="snowfall"></div>
+    </div>
+
+    <script src="snowfall.js"></script>
 </body>
 </html>
